@@ -15,10 +15,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: echo hello world
         run: echo Hello, world!
-      - name: date show
-        run: echo $(date)
-      
-      - name: whoami show
-  	    run: echo $(whoami) 
+    
 
  
