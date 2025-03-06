@@ -1,12 +1,12 @@
 name: My first CI
-author: Peter Yasnetsov
 
 description: My first ci and la la la
 
 on:
  pull_request:
-   branches:
-     - "main"
+   branches: [ "main" ]
+  push:
+    branches: [ "main" ]
 
 jobs:
  simple_job:
