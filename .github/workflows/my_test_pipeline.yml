@@ -13,12 +13,12 @@ jobs:
    runs-on: ubuntu-latest
    steps:
       - uses: actions/checkout@v4
-      - name: Вывод на экран слов hello world
+      - name: echo hello world
         run: echo Hello, world!
-      - name: Вывод на экран текущего времени
+      - name: date show
         run: echo $(date)
       
-      - name: Вывод на экран текущего пользователя
+      - name: whoami show
   	    run: echo $(whoami) 
 
  
