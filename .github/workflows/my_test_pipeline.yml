@@ -1,0 +1,24 @@
+name: My first CI
+author: Peter Yasnetsov
+
+description: My first ci and la la la
+
+on:
+ pull_request:
+   branches:
+     - "main"
+
+jobs:
+ simple_job:
+   runs-on: ubuntu-latest
+   steps:
+      - uses: actions/checkout@v4
+      - name: Вывод на экран слов hello world
+        run: echo Hello, world!
+      - name: Вывод на экран текущего времени
+        run: echo $(date)
+      
+      - name: Вывод на экран текущего пользователя
+  	run: echo $(whoami) 
+
+ 
