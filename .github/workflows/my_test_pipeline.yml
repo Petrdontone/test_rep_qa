@@ -17,6 +17,7 @@ jobs:
         run: echo Hello, world!
       - name: date show
         run: echo $(date)
-    
+      - name: whoami show
+  	    run: echo $(whoami) 
 
  
